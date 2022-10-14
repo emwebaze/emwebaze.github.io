@@ -12,5 +12,11 @@ layout: default
           <article>
             {{ content }}
           </article>
+          {% if page.news -%}
+          <!-- News -->
+          {%- include news.html %}
+          {%- endif %}
+          {% if page.selected_papers -%}
+          {%- endif %}
 
         </div>
